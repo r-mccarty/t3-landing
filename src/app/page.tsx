@@ -8,11 +8,23 @@ import {
 
 export default function HomePage() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
+		<main>
 			<div>
 				Testing
-				<Accordion type="single" collapsible>
+				<Accordion type="multiple">
 					<AccordionItem value="item-1">
+						<AccordionTrigger>Is it accessible?</AccordionTrigger>
+						<AccordionContent>
+							Yes. It adheres to the WAI-ARIA design pattern.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="item-2">
+						<AccordionTrigger>Is it accessible?</AccordionTrigger>
+						<AccordionContent>
+							Yes. It adheres to the WAI-ARIA design pattern.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="item-3">
 						<AccordionTrigger>Is it accessible?</AccordionTrigger>
 						<AccordionContent>
 							Yes. It adheres to the WAI-ARIA design pattern.
