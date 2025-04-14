@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: var(--font-barlow), ui-sans-serif, system-ui, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	
+    /* Example: Assign Colfax to font-serif (or choose another name) */
+	--font-serif: var(--font-colfax), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; 
+
+    /* Example: Assign Feature to a custom utility 'font-display' */
+    /* Note: You might need a corresponding entry in a config file for custom names like 'font-display' */
+    /* unless your setup specifically allows defining new keys directly in @theme */
+    /* A safer bet is often overriding existing ones like font-sans, font-serif, font-mono */
+    --font-display: var(--font-feature); /* Might require config */
+    --font-condensed: var(--font-feature-condensed); /* Might require config */
+}
